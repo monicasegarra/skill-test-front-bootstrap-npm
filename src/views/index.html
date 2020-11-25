@@ -15,18 +15,18 @@
       <br />
 
       <!-- Modal trigger button -->
-      <a href="#" class="btn btn-primary">
+      <a href="#" class="btn btn-primary" id="myBtnModal">
         Register now
       </a>
     </div>
 
     <!-- Modal -->
     <div class="modal" id="modal-skill-test" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Register user</h5>
+            <h5 class="modal-title col-11 text-center" id="exampleModalLabel">Register user</h5>
             <button
               type="button"
               class="close"
@@ -36,46 +36,46 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <!-- Modal Body -->
-          <div class="modal-body">
-            <!-- User register form -->
-            <form>
-              <div class="">
+          <!-- User register form -->
+          <form id="register">
+            <!-- Modal Body -->
+            <div class="modal-body" id="formModal">
+              <div class="form-group">
                 <label for="modal-skill-test-name">Name</label>
                 <input
                   type="text"
-                  class=""
+                  class="form-control"
                   id="modal-skill-test-name"
                   name="modal-skill-test-name"
                   required
                 />
               </div>
-
-              <div class="">
+              <div class="form-group">
                 <label for="modal-skill-test-surname">Surname</label>
                 <input
                   type="text"
-                  class=""
+                  class="form-control"
                   id="modal-skill-test-surname"
                   name="modal-skill-test-surname"
                   required
                 />
               </div>
 
-              <div class="">
+              <div class="form-group">
                 <label for="modal-skill-test-email">Email address</label>
                 <input
                   type="email"
-                  class=""
+                  class="form-control"
                   id="modal-skill-test-email"
                   name="modal-skill-test-email"
                   required
                 />
               </div>
-
-              <button type="submit" class="">Submit</button>
-            </form>
-          </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

@@ -18,6 +18,9 @@ const config = {
   }
 };
 
+
+
+
 module.exports = {
   devServer: {
     contentBase: path.join(rootPath, 'dist'),
