@@ -9,6 +9,6 @@
 /**
  * Mixins
  */
-// mixin {
-//     animation: slide-down 1s;
-// }
+@mixin slide-down-animation {
+     animation: slide-down 1s;
+ }
